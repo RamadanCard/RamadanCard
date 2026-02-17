@@ -39,7 +39,7 @@ saveBtn.addEventListener("click", function () {
     ctx.textAlign = "center";
     ctx.textBaseline = "middle";
 
-    const x = (140 * canvas.width) / img.width;
+    const x = (125 * canvas.width) / img.width;
     const y = (345 * canvas.height) / img.height;
 
     ctx.fillText(employeeName.textContent, x, y);
@@ -49,4 +49,5 @@ saveBtn.addEventListener("click", function () {
     link.href = canvas.toDataURL("image/png");
     link.click();
   };
+
 });
